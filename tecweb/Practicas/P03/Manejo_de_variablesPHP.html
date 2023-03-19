@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
+<html>
+<head>
+    <title>Práctica 2</title>
+</head>
+<body>
+    <h2>Inciso 1</h2>
+    <p>Determina cuál de las siguientes variables son válidas y explica por qué:</p>
+    <p>$_myvar, $_7var, myvar, $myvar, $var7, $_element1, $house*5</p>
+    <?php
+        $_myvar = 'hola';
+        echo '$_myvar es correcta <br>';
+
+        $_7var = 11;
+        echo '$_7var es correcta <br>' ;
+
+        //myvar = 3.141516;
+        echo 'myvar es incorrecta <br>';
+
+        //$myvar = 'hola';
+        echo '$myvar es incorrecta'<br>;
+
+        $var7 = 10;
+        echo '$var7 es correcta; <br>
+
+        $_element1 = 'hola';
+        echo '$_element1 es correcta' <br>
+
+        //$house*5 = 'hola';
+        echo '$house*5 es incorrecta por queno admite valores alfanumericos y tampoco valores numericos'; <br>
+   
+      <h2>Inciso 2</h2>
+      <p>Proporcionar los valores de $a,$b,$C como sigue:</p>
+
+        $a = "ManejadorSQL";
+        echo $a;
+        $b = 'MySQL';
+        echo $b;
+        $c = &$a;
+        echo $b;
+        $a = "PHP server";
+        echo $a;
+        $b = &$a;
+        echo $b;
+    
+      <h2>Inciso 3</h2>
+      <p>Proporcionar los valores de $a,$b,$C como sigue:</p>
+
+        $a = “PHP5”;
+        echo $a;
+        echo '<br>';
+        $z[] = &$a;
+        echo $z[];
+        echo '<br>';
+        $b = “5a version de PHP”;
+        echo $b;
+        echo '<br>';
+        $c = $b*10;
+        echo $c;
+        echo '<br>';
+        $a .= $b;
+        echo $a .;
+        echo '<br>';
+        $b *= $c;
+        echo   $b *;
+        echo '<br>';
+        $z[0] = “MySQL”;
+        echo $z[0];
+    
+        <h2>Inciso 4</h2>
+        <p> Lee y muestra los valores de las variables del ejercicio anterior, pero ahora con la ayuda de la matriz $GLOBALS o del modificador global de PHP.</p>
+         $a = "PHP5";
+         $z = &$a;
+         $b = "5a version de PHP";
+         $b = 2;
+         $c = $b*10;
+         $a = $b;
+         $b = $c;
+         $z = "MySQL";
+
+         echo $GLOBALS['a'];
+	     echo '<br>';
+	     echo $GLOBALS['z'];
+	     echo '<br>';
+	     echo $GLOBALS['b'];
+	     echo '<br>';
+	     echo $GLOBALS['c'];
+	     echo '<br>';
+        
+         <h2> Inciso 5</h2>
+         <p>Dar el valor de las variables $a, $b, $c al final del siguiente script:</p>
+            $a = “7 personas”;
+            $b = (integer) $a;
+            $a = “9E3”;
+            $c = (double) $a;</p>
+
+            $a ="7 personas";
+            echo  $a;
+            echo '<br>';
+            $b=2;
+            $b = $a;
+            echo $a;
+            echo '<br>';
+            $a = "9E3";
+            $c =  $a;
+            echo  $c;
+
+         <h2> Inciso 6</h2>
+         <p>Dar y comprobar el valor booleano de las variables $a, $b, $c, $d, $e y $f y muéstralas usando la función var_dump(<datos>).</p>
+            $a = true;
+           is_bool($a);
+           var_dump($a);
+           echo '<br>';
+           $b = false;
+           is_bool($b);
+           var_dump($b);
+           echo '<br>';
+           $c = false;
+           is_bool($c);
+           var_dump($c);
+           echo '<br>';
+           $d = true;
+           is_bool($d);
+           var_dump($d);
+           echo '<br>';
+           $a = false;
+           is_bool($a);
+           var_dump($a);
+           
+         <h2> Inciso 6</h2>
+         <p>Después investiga una función de PHP que permita transformar el valor booleano de $c y $e en uno que se pueda mostrar con un echo:</p>
+           $a = 0;
+           $b = TRUE;
+           $c = FALSE;
+           $d = ($a OR $b);
+           $e = ($a AND $c);
+           $f = ($a XOR $b);
+
+           echo '$c:        '.(boolval($c) ? 'true' : 'false')."\n";
+           echo '<br>';
+           echo '$e:        '.(boolval($e) ? 'true' : 'false')."\n";
+
+         
+
+</body>
+</html>
