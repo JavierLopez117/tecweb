@@ -1,0 +1,21 @@
+{
+    "name":"tecweb/proyecto_final",
+    "description": "servicio de streming",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Javier Alonso Lopez",
+            "email": "xalq.117@gmail.com"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "tecweb\\":"src/"
+        }
+    }
+
+}
